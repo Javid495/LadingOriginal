@@ -151,6 +151,28 @@ nav a:hover{
   font-size: 30px ;
 }
 
+.footer{
+  background-color: var(--Primary-color);
+}
+
+.Conctactos{
+  display: inline-block;
+  width: 20%;
+  margin: 30px 10em
+}
+
+.Redes{
+  display: inline-block;
+  width: 20%;
+  margin-left: 15%;
+}
+
+.Redes img{
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 50px;
+}
+
 /* Media query aplicada para ipad */
 @media(max-width:1068px){
 
@@ -225,6 +247,24 @@ nav a:hover{
   .Registro{
     width: 40%;
   }
+
+  .Conctactos{
+
+  width: 20%;
+  margin: 30px 3em
+}
+
+.Redes{
+  width: 35%;
+  margin-left: 12%;
+}
+
+.Redes img{
+  margin-left: 20px;
+  margin-top: 10px;
+  width: 50px;
+}
+
 }
 
 /* Media query para celular */
@@ -251,4 +291,16 @@ nav a:hover{
     width: 100%;
     margin-left: 0;
   }
+
+.Conctactos{
+  width: 50%;
+  margin-left: 20%;
+}
+
+.Redes{
+  width: 80%;
+  display: block;
+  margin-left: 20%;
+}
+
 }
