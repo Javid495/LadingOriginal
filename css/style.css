@@ -1,0 +1,249 @@
+/* Link de la tipografia */
+@import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&family=Edu+VIC+WA+NT+Hand:wght@400..700&display=swap');
+
+/* Restablesco las medidas a 0 */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Aplico esa tipografia de manera global */
+body{
+  font-family: "Edu VIC WA NT Hand", cursive;
+}
+
+/* defino mi paltica de colores */
+:root{
+  --Primary-color:rgb(149, 210, 179);
+  --Secundary:rgb(241, 248, 232);
+  --Tecercolor: whitesmoke;
+}
+
+/* Estilos del contenedor navbar */
+.navbar{
+  background-color: var(--Secundary);
+  padding-bottom: 10px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Estilos del titulo nav */
+.nombre{
+  margin-top: 10px;
+  margin-left: 30px;
+  display: inline-block;
+  width: 30%;
+}
+
+/* Estilos del contenor de la barra de navegacion */
+nav{
+  margin-left: 15%;
+  width: 40%;
+  display: inline-block;
+}
+
+/* Estilos aplicados en el texto */
+nav a{
+  margin-left: 20%;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Estilos del boton login */
+.boton{
+  display: inline-block;
+  width: 10%;
+}
+
+/* Estilos aplicados en el texto el boton */
+.boton a{
+  border-radius: 10px;
+  background-color: var(--Primary-color);
+  padding: 5px 30px;
+  text-decoration: none;
+}
+
+/* Estilos aplicados en la caja principal del contenido */
+.content{
+  width: 80%;
+  margin: 10em auto;
+  background-color: rgb(216, 239, 211);
+  padding: 3em 20px;
+  border-radius: 10px;
+}
+
+/* Estilos del contenedor formulario */
+.formulario{
+  width: 50%;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Para que el registro tenga un respiro con el formulario */
+.formulario h2{
+  margin-bottom: 20px;
+}
+
+/* Reposicionar los labels de los inputs */
+.formulario label{
+  display: block;
+}
+
+/* Medidas de los inputs */
+.formulario input {
+  width: 82%;
+  margin-bottom: 3em;
+  border-radius: 5px;
+  padding: 5px 5px;
+  background-color: var(--Tecercolor);
+}
+
+/* Editamos la tipografia del placeholder */
+.formulario input::placeholder{
+  font-family: "Edu VIC WA NT Hand", cursive;
+}
+
+/* Agrupo los inputs de nombre y Contacto */
+.formulario .unidos{
+  width: 45%;
+  display: inline-block;
+}
+
+/* Estilos aplicados en el boton registro */
+.Registro{
+  border-radius: 10px;
+  background-color: var(--Primary-color);
+  padding: 5px 20px;
+  width: 30%;
+  margin-left: 30%;
+  text-align: center;
+}
+
+/* Quito el subrayado el texto */
+.Registro a{
+  text-decoration: none;
+}
+
+/* Estilos de la caja junto a la imagen */
+.imagen{
+  width: 48%;
+  display: inline-block;
+  background: linear-gradient(rgba(0, 0, 0, 0.236), rgba(15, 47, 16, 0.5)), url(../img/modisteria.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment:center;
+  border-radius: 10px;
+  padding: 20em 10px 50px 10px;
+  text-align: center;
+}
+
+/* Estilos del texto dentro del contenedor .imagen */
+.imagen h1{
+  color: var(--Tecercolor);
+  font-size: 30px ;
+}
+
+/* Media query aplicada para ipad */
+@media(max-width:1068px){
+
+  /* Centro el contenido del contenedor del navbar */
+  .navbar{
+    text-align: center;
+  }
+  
+  /* Modifico el texto Consturera */
+  .nombre{
+    width: 100%;
+    font-size: 12px;
+  }
+
+  /* Modificaciones aplicadas en el ocntenedor nav*/
+  nav{
+    display: block;
+    width: 60%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+
+  /* Cambio la disposicion de los elementos para que sean en bloque */
+  nav a{
+    display: block;
+  }
+
+  /* Estilos cambiados en los botones */
+  .boton{
+    width: 40%;
+    margin-left: 10px;
+  }
+
+  /* Modificaciones de la Caja contenido */
+  .content{
+    margin-top: 18em;
+    width: 90%;
+  }
+
+  /* Modificaciones hechas en la contenedor del formulario */
+  .formulario{
+    display: block;
+    margin-bottom: 2em;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Algunos ajustes en los labels */
+  .formulario div label{
+    text-align: left;
+    margin-left: 4em;
+  }
+
+  /* Modifico los campos de nombre y numero */
+  .formulario .unidos {
+    width: 100%;
+    display: block; 
+  }
+
+  /* Modifico el tamaño de las imagenes */
+  .imagen{
+    width: 90%;
+    margin-left: 2em;
+  }
+
+  /* modifico el tamaño de la tipografia del texto */
+  .imagen h1{
+    font-size: 20px;
+  }
+
+  /* Modifico el ancho del boton */
+  .Registro{
+    width: 40%;
+  }
+}
+
+/* Media query para celular */
+@media(max-width:480px){
+
+  /* Modifico nuevamente la tipografia del texto nav */
+  .nombre{
+    font-size: 10px;
+    width: 90%;
+  }
+
+  /* Los labels */
+  .formulario div label {
+    text-align: left;
+    margin-left: 2em;
+  }
+
+  /* El tamaño de la imagen */
+  .imagen{
+    background: linear-gradient(rgba(0, 0, 0, 0.236), rgba(15, 47, 16, 0.5)), url(../img/cba7776d7de2cc5fe56de32db3e570f1.jpg);
+    background-position: center;
+    background-size: contain,cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin-left: 0;
+  }
+}
