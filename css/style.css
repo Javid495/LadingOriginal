@@ -52,6 +52,11 @@ nav a{
   text-align: center;
 }
 
+/* Aplico un hover */
+nav a:hover{
+  border-bottom: 3px solid var(--Primary-color) ;
+}
+
 /* Estilos del boton login */
 .boton{
   display: inline-block;
