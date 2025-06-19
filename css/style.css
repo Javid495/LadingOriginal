@@ -15,8 +15,8 @@ body{
 
 /* defino mi paltica de colores */
 :root{
-  --Primary-color:rgb(149, 210, 179);
-  --Secundary:rgb(241, 248, 232);
+  --Primary-color:rgb(202, 210, 149);
+  --Secundary:rgb(212, 255, 0);
   --Tecercolor: whitesmoke;
 }
 
@@ -57,6 +57,22 @@ nav a:hover{
   border-bottom: 3px solid var(--Primary-color) ;
 }
 
+.MenuBoton{
+  width: 10%;
+  display: inline-block;
+  border: none;
+  width: 50px;
+  height: 50px;
+  font-size: 32px;
+  border-radius: 50%;
+  display: none;
+}
+
+.MenuBoton i{
+  line-height: 50px;
+}
+
+
 /* Estilos del boton login */
 .boton{
   display: inline-block;
@@ -75,10 +91,12 @@ nav a:hover{
 .content{
   width: 80%;
   margin: 10em auto;
-  background-color: rgb(216, 239, 211);
+  background-color: var(--Tecercolor);
   padding: 3em 20px;
   border-radius: 10px;
 }
+
+
 
 /* Estilos del contenedor formulario */
 .formulario{
@@ -179,17 +197,19 @@ nav a:hover{
   /* Centro el contenido del contenedor del navbar */
   .navbar{
     text-align: center;
+    position:relative;
   }
   
   /* Modifico el texto Consturera */
   .nombre{
-    width: 100%;
+    width: 30%;
     font-size: 12px;
+    display: inline-block;
   }
 
   /* Modificaciones aplicadas en el ocntenedor nav*/
   nav{
-    display: block;
+    display: none;
     width: 60%;
     margin-top: 10px;
     margin-bottom: 20px;
@@ -200,10 +220,18 @@ nav a:hover{
     display: block;
   }
 
+  .MenuBoton{
+    display: block;
+    position: absolute;
+    right: 0px;
+    bottom: 10px;
+  }
+  
   /* Estilos cambiados en los botones */
   .boton{
+    display: block;
     width: 40%;
-    margin-left: 10px;
+    margin: 10px auto;
   }
 
   /* Modificaciones de la Caja contenido */
